@@ -6,9 +6,7 @@ function ListaTareas() {
       <>
       <ItemsTarea nombre='Planificar' />
       <ItemsTarea nombre='Maquetar' />
-      <ItemsTarea nombre='Codear' />
-        
-        
+      <ItemsTarea nombre='Codear' /> 
       </>
     )
   }
