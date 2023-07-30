@@ -1,12 +1,13 @@
-function ItemsTarea(props) {
+import { ListGroup, button } from "react-bootstrap";
+
+const ItemsTarea = () {
+  return (
+      <ListGroup.Item className="d-flex justify-content-between">
+      ejemplo de tarea 
+      <button variant="danger">Borrar</Button>
+           </ListGroup.Item>
+    );
+  };
   
-    return (
-      <>
-        <h1>{props.nombre}</h1>
-        
-      </>
-    )
-  }
-  
-  export default ItemsTarea
+  export default ItemsTarea;
   

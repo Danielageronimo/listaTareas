@@ -1,12 +1,19 @@
+import { Form, Button } from "react-bootstrap";
+import ListaTareas from "./ListaTareas";
 
-function FormularioTarea() {
-  
+const FormularioTarea = () => {
   return (
     <>
-      <h1>Formulario Tarea</h1>
+    <Form>
+      <Form.Group className="mb-3 d-flex" controLId="tarea">
+        <Form.Control type="text" placeholder="ingrese una tarea"/>
+        <Button variant="primary">Agregar</Button>
+      </Form.Group>
+    </Form>
+      <ListaTareas></ListaTareas>
       
     </>
-  )
-}
+  );
+};
 
-export default FormularioTarea
+export default FormularioTarea;

@@ -1,15 +1,14 @@
-import ItemsTarea from './ItemsTarea.jsx'
+import { ListGroup } from "react-bootstrap";
+import ItemsTarea from './ItemsTarea';
 
-function ListaTareas() {
+
+const ListaTareas = ()=> {
+  return (
+    <ListGroup>
+      <ItemsTarea></ItemsTarea>
+    </ListGroup>
+  );
+};
   
-    return (
-      <>
-      <ItemsTarea nombre='Planificar' />
-      <ItemsTarea nombre='Maquetar' />
-      <ItemsTarea nombre='Codear' /> 
-      </>
-    )
-  }
-  
-  export default ListaTareas
+    export default ListaTareas
   
