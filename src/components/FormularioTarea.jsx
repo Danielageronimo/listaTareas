@@ -13,8 +13,9 @@ const FormularioTarea = () => {
       <Form.Group className="mb-3 d-flex" controLId="tarea">
         <Form.Control type="text" 
         placeholder="ingrese una tarea" 
-         value={tarea} />
-         
+         value={tarea} 
+         onChange={(e)=> setTarea(e.target.value) }
+          />
         <Button variant="primary">Agregar</Button>
       </Form.Group>
     </Form>
