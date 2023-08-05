@@ -1,16 +1,24 @@
 import { Form, Button } from "react-bootstrap";
 import ListaTareas from "./ListaTareas";
+import { useState } from "react";
 
 const FormularioTarea = () => {
+ const [tarea, setTarea] =useState('');
+ const [listaTareas, setListaTareas] =useState([]);
+
+
   return (
     <>
     <Form>
       <Form.Group className="mb-3 d-flex" controLId="tarea">
-        <Form.Control type="text" placeholder="ingrese una tarea"/>
+        <Form.Control type="text" 
+        placeholder="ingrese una tarea" 
+         value={tarea} />
+         
         <Button variant="primary">Agregar</Button>
       </Form.Group>
     </Form>
-      <ListaTareas></ListaTareas>
+    <ListaTareas></ListaTareas>
       
     </>
   );

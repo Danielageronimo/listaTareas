@@ -1,7 +1,8 @@
 import { Container } from 'react-bootstrap'
 import './App.css';
-import"bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import FormularioTarea from "./components/FormularioTarea";
+import './index.css'
 
 function App() { 
 
@@ -12,7 +13,7 @@ function App() {
       <hr className='text-light'/>
       <FormularioTarea></FormularioTarea>
     </Container>
-    <footer className='text-center bg-dark text-light py-4'>
+    <footer className="text-center bg-dark text-light py-4">
       <p>&copy; Todos los derechos reservados</p>
     </footer>
     </>
