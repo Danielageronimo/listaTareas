@@ -1,14 +1,16 @@
 import { ListGroup } from "react-bootstrap";
 import ItemsTarea from './ItemsTarea';
 
+const ListaTareas = ({propsListaTareas}) => {
 
-const ListaTareas = ()=> {
   return (
     <ListGroup>
-      <ItemsTarea></ItemsTarea>
+      {
+        propsListaTareas.map(()=>  <ItemsTarea></ItemsTarea>)
+      }
     </ListGroup>
   );
 };
   
-    export default ListaTareas
+export default ListaTareas;
   
